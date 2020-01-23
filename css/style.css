@@ -1,3 +1,8 @@
 body {
     height:2000px;
 }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 60px;
+    height: 60px;
+}

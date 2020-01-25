@@ -28,8 +28,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="#Pricing" class="nav-link" data-toggle="modal"
-                        data-target="#exampleModal">Pricing</a></li>
+                <li class="nav-item"><a href="#form" class="nav-link" data-toggle="modal"
+                        data-target="#exampleModal">Log In</a></li>
                 <li class="nav-item"><a href="#About" class="nav-link">About Us</a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -107,26 +107,47 @@
     <!--Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal"
         aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Autorization</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <div class="row text-center">
-                            <div class="col-4">aaa</div>
-                            <div class="col-8">aaa</div>
-                        </div>
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail">Email address</label>
+                                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail"
+                                            aria-describedby="emailHelp" placeholder="Email" required>
+                                        <small class="form-text text-muted" id="emailHelp" >Enter your email</small>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputPass">Email address</label>
+                                        <input type="password" class="form-control form-control-lg"
+                                            id="exampleInputPass" placeholder="PAssword" required>
+                                        <small class="form-text text-muted" id="passHelp">Enter your pass</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    remember data
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enter</button>
+                        </form>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button class="btn btn-primary">Save</button>
-                </div>
+
             </div>
         </div>
     </div>
